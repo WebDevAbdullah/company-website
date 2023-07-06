@@ -1,0 +1,148 @@
+@import "./src/sass/_variables.scss";
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+  font-family: "cairoFont";
+  src: url(../fonts/Cairo-Regular.ttf);
+}
+
+li {
+  list-style: none;
+}
+.container-fluid {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  overflow-x: hidden;
+}
+
+.menu {
+  .navbar {
+    font-weight: bold;
+    padding: 0px 100px !important;
+    // ???
+    background-color: #fff !important;
+
+    .navbar-nav {
+      li {
+        padding-top: 0.438rem !important;
+      }
+
+      li > a {
+        transition-property: background-color;
+        transition-duration: 0.5s;
+
+        &:hover {
+          color: $main-color !important;
+          background-color: $custom-color !important;
+          border-bottom: 1px solid $main-color !important;
+        }
+      }
+    }
+  }
+}
+
+.carousel-top {
+  .row {
+    display: block !important;
+  }
+
+  .carousel {
+    .carousel-item {
+      img {
+        height: 450px;
+      }
+
+      .overlay {
+        position: absolute;
+        background-color: rgba(65, 155, 155, 0.5);
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        display: flex !important;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+      }
+    }
+
+    .carousel-caption {
+      h1 {
+        font-weight: bold;
+        color: white;
+        margin-bottom: 50px;
+      }
+
+      h4 {
+        width: 60%;
+        color: $custom-color;
+      }
+    }
+  }
+
+  .carousel-indicators {
+    li {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      margin: 20px 5px 0px 0px;
+
+      &.active {
+        background-color: $main-color;
+      }
+    }
+  }
+}
+
+// Start Components
+.custom-btn {
+  padding: 10px 20px;
+  color: $main-color !important;
+  border: 1px solid $main-color !important;
+  font-weight: bold !important;
+
+  &:hover,
+  &:focus {
+    color: $custom-color !important;
+    background-color: $main-color !important;
+    border: 1px solid $custom-color !important;
+  }
+}
+// End Components
+
+@media (max-width: 991.98px) {
+  .menu {
+    .navbar {
+      padding: 0 20px !important;
+
+      .navbar-nav {
+        li > a {
+          padding-right: 5px;
+
+          &:hover {
+            border-bottom: none !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .carousel-top {
+    .carousel {
+      .carousel-caption {
+        h1 {
+          font-size: 30px;
+        }
+
+        h4 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
