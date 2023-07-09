@@ -1,0 +1,25 @@
+.custom-btn {
+  padding: 10px 20px;
+  color: $main-color !important;
+  border: 1px solid $main-color !important;
+  font-weight: bold !important;
+
+  &:hover,
+  &:focus {
+    color: $custom-color !important;
+    background-color: $main-color !important;
+    border: 1px solid $custom-color !important;
+  }
+}
+
+.custom-btn-main {
+  padding: 20px;
+  background-color: $main-color !important;
+  color: white;
+  font-weight: bold;
+  width: 250px;
+
+  &:hover {
+    color: #000;
+  }
+}
