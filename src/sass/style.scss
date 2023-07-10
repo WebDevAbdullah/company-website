@@ -9,9 +9,9 @@ body {
   src: url(../fonts/Cairo-Regular.ttf);
 }
 
-* {
-  outline: 1px solid red;
-}
+// * {
+//   outline: 1px solid red;
+// }
 
 li {
   list-style: none;
@@ -209,6 +209,38 @@ li {
 }
 // End Said About Company Section
 
+// Start Clients Section
+.clients {
+  background-color: #419898;
+}
+// End Clients Section
+
+// Start Latest Posts Section
+.latest-post {
+  .card {
+    width: 23rem;
+
+    .card-body {
+      border: 1px solid #ccc;
+      width: 90%;
+      border-radius: 5px;
+      position: relative;
+      background-color: white;
+      top: -17px;
+      left: -5%;
+    }
+
+    .card-title {
+      font-size: 18px;
+    }
+
+    .card-text {
+      font-size: 14px;
+    }
+  }
+}
+// End Latest Posts Section
+
 @media (min-width: 992px) {
   .latest-projects {
     #carouselProjects {
@@ -253,11 +285,4 @@ li {
       }
     }
   }
-}
-
-.project-details {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
