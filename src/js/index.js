@@ -18,3 +18,7 @@ $(function () {
     }
   );
 });
+
+let date = new Date();
+let year = date.getFullYear();
+document.getElementById("year").innerHTML = "جميع الحقوق محفوظة أكاديمية حسوب" + " &copy; " + year;

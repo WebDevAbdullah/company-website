@@ -16,6 +16,10 @@ body {
 li {
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
+
 .container-fluid {
   padding-right: 0px !important;
   padding-left: 0px !important;
@@ -240,6 +244,86 @@ li {
   }
 }
 // End Latest Posts Section
+
+// Start Footer
+footer {
+  height: 450px;
+  background-color: #393939;
+
+  h2 {
+    color: $custom-color;
+    font-size: 150%;
+  }
+
+  .line1 {
+    width: 5%;
+    border-top: 3px solid $custom-color;
+  }
+
+  #footer-nav-link {
+    a {
+      color: #bbbbbb;
+      margin-left: 15px;
+      font-size: 90%;
+
+      &:hover,
+      &:focus {
+        color: $custom-color;
+      }
+    }
+  }
+
+  .line2 {
+    width: 60%;
+    border-top: 3px solid $custom-color;
+  }
+
+  .form {
+    width: 20%;
+    margin: 0 auto;
+
+    input {
+      background-color: #202020;
+      border-radius: 1px;
+      border: 0px;
+
+      &:focus {
+        border-color: $custom-color;
+        box-shadow: 0 0 2px 0 $custom-color;
+        background-color: #202020;
+        color: $custom-color;
+      }
+    }
+
+    .btn-light {
+      &:hover,
+      &:focus {
+        color: $custom-color !important;
+        background-color: #363636 !important;
+        border: 1px solid $custom-color;
+        transition-property: border, color, background-color;
+        transition-duration: 0.3s;
+      }
+    }
+  }
+
+  .copyright {
+    color: #969696;
+    font-size: 90%;
+    font-weight: bold;
+  }
+
+  .copyright-link {
+    text-decoration: none !important;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: $custom-color;
+    }
+  }
+}
+// End Footer
 
 @media (min-width: 992px) {
   .latest-projects {
