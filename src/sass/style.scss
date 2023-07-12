@@ -1,21 +1,20 @@
 @import "./src/sass/_variables.scss";
 @import "./src/sass/_components.scss";
-body {
-  font-family: "Roboto", sans-serif;
-}
 
 @font-face {
   font-family: "cairoFont";
   src: url(../fonts/Cairo-Regular.ttf);
 }
 
-// * {
-//   outline: 1px solid red;
-// }
+// Start Global
+body {
+  font-family: "Roboto", sans-serif;
+}
 
 li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
@@ -25,6 +24,7 @@ a {
   padding-left: 0px !important;
   overflow-x: hidden;
 }
+// End Global
 
 // Start Menu Section
 .menu {
@@ -119,11 +119,6 @@ a {
   }
 }
 // End Carousel Top Section
-
-// Start Latest Projects Section
-// .carousel-inner {
-//   height: 222px;
-// }
 
 .latest-projects {
   background-color: #ffffcc;
@@ -247,7 +242,7 @@ a {
 
 // Start Footer
 footer {
-  height: 450px;
+  height: 400px;
   background-color: #393939;
 
   h2 {
@@ -256,7 +251,7 @@ footer {
   }
 
   .line1 {
-    width: 5%;
+    width: 8%;
     border-top: 3px solid $custom-color;
   }
 
@@ -279,7 +274,7 @@ footer {
   }
 
   .form {
-    width: 20%;
+    max-width: 280px;
     margin: 0 auto;
 
     input {
@@ -326,6 +321,7 @@ footer {
 // End Footer
 
 @media (min-width: 992px) {
+  // Start Latest Posts Section
   .latest-projects {
     #carouselProjects {
       .thumbnail {
@@ -335,9 +331,11 @@ footer {
       }
     }
   }
+  // End Latest Posts Section
 }
 
 @media (max-width: 991.98px) {
+  // End Main Section
   .menu {
     .navbar {
       padding: 0 20px !important;
@@ -353,9 +351,11 @@ footer {
       }
     }
   }
+  // End Menu Section
 }
 
 @media (max-width: 767.98px) {
+  // Start Carousel Top Section
   .carousel-top {
     .carousel {
       .carousel-caption {
@@ -369,4 +369,19 @@ footer {
       }
     }
   }
+  // End Carousel Top Section
+
+  // Start Footer
+  footer {
+    .line1 {
+      width: 20%;
+      border-top: 3px solid $custom-color;
+    }
+
+    .line2 {
+      width: 80%;
+      border-top: 3px solid $custom-color;
+    }
+  }
+  // End Footer
 }
