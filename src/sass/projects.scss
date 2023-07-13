@@ -1,0 +1,22 @@
+.banner {
+  .banner-img {
+    background-image: url(../img/projects-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    height: 250px;
+    position: relative;
+  }
+
+    .overlay {
+      position: absolute;
+      background-color: $overlay-color;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+}
+

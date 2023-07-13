@@ -30,3 +30,20 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.custom-btn-2 {
+  color: #363636;
+  background-color: white;
+  border: none;
+  border-radius: 1px;
+  font-weight: bold;
+  position: absolute;
+  right: 25px;
+
+  &:hover,
+  &:focus {
+    color: white;
+    background-color: $main-color;
+    border: none;
+  }
+}
