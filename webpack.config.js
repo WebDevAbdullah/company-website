@@ -4,7 +4,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const path = require("path");
 
 module.exports = {
-  mode: "development",
+  // mode: "development",
   entry: {
     app: "./src/js/index.js",
   },
@@ -90,6 +90,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "projects.html",
       template: "./src/projects.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "project-details.html",
+      template: "./src/project-details.html",
     }),
     new MiniCssExtractPlugin({
       filename: "css/style.css",

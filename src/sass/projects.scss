@@ -7,16 +7,85 @@
     position: relative;
   }
 
-    .overlay {
-      position: absolute;
-      background-color: $overlay-color;
-      top: 0;
-      right: 0;
-      height: 100%;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  .overlay {
+    position: absolute;
+    background-color: $overlay-color;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
+// ==== project-details.html ====
+.gallery__img-block {
+  margin: auto;
+  max-width: 300px;
+  max-height: auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* New */
+.modal-body {
+  height: 280px;
+}
+.modal .img-modal {
+  /* z-index: 1; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  /* Before click */
+  opacity: 0;
+  transition: opacity 1s;
+}
+.modal .img-modal.active {
+  /* After click */
+  opacity: 1;
+}
+
+.modal-footer .prev,
+.modal-footer .next {
+  background-color: #009688;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 5px;
+  user-select: none;
+  width: 20%;
+}
+.modal-footer .prev {
+  margin-left: auto;
+}
+.modal-footer .next {
+  margin-right: auto;
+}
+
+.modal-footer .prev.disabled,
+.modal-footer .next.disabled {
+  background-color: rgba(0, 150, 136, 0.5);
+  cursor: no-drop;
+}
+
+.gallery {
+  .card {
+    .card-body {
+      .card-title {
+        // font-size: 1.5rem;
+        font-weight: 800;
+        color: $main-color;
+      }
+    }
+  }
+}
