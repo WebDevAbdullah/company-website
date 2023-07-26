@@ -93,3 +93,13 @@
     }
   }
 }
+
+// ==== add-blog.html ====
+.add-blog {
+  label {
+    &:first-child {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+}

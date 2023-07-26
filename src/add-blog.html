@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>شركة عربي | إضافة تدوينة</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <section class="menu">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <a class="navbar-brand p-0" href="index.html">
+                <img src="img/logo.png" alt="شركة عربي" />
+              </a>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item p-2">
+                    <a class="nav-link" href="index.html">الرئيسية</a>
+                  </li>
+                  <li class="nav-item p-2">
+                    <a class="nav-link" href="about.html">عن الشركة</a>
+                  </li>
+                  <li class="nav-item p-2 active">
+                    <a class="nav-link" href="projects.html">مشاريعنا</a>
+                  </li>
+                  <li class="nav-item p-2">
+                    <a class="nav-link" href="blog.html">المدونة</a>
+                  </li>
+                  <li class="nav-item p-2">
+                    <a class="nav-link" href="contact.html">تواصل معنا</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+
+      <section class="banner banner-blog">
+        <div class="banner-img">
+          <div class="overlay">
+            <h1 class="text-white fw-bold">إضافة تدوينة</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="add-blog mt-4 mb-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-7">
+              <form>
+                <div class="row mt-4">
+                  <div class="col-md-6">
+                    <label class="mb-2">عنوان التدوينة</label>
+                    <input type="text" class="form-control mb-3" />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="mb-2">الصورة</label>
+                    <div class="input-group">
+                      <button class="btn btn-outline-secondary rounded-0 rounded-end custom-btn-no-padding" type="button" id="button-addon2">تحميل</button>
+                      <input type="text" class="form-control rounded-0 rounded-start" placeholder="أختر الصورة" />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label class="my-2">تفاصيل التدوينة</label>
+                    <textarea name="message" required placeholder="النص" cols="30" rows="5" class="form-control"></textarea>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-light custom-btn mt-4">إضافة التدوينة</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="my-4">شركة عربي</h2>
+          </div>
+          <hr class="line1 mx-auto" />
+          <div id="footer-nav-link" class="col-12 text-center mt-2 mb-3">
+            <a href="index.html">الرئيسية</a>
+            <a href="about.html">من نحن</a>
+            <a href="projects.html">مشاريعنا</a>
+            <a href="blog.html">المدونة</a>
+            <a href="contact.html">تواصل معنا</a>
+          </div>
+          <hr class="line2 mx-auto" />
+          <div class="col-12 text-center my-2">
+            <label class="custom-heading text-white mb-3">اشترك بالنشرة البريدية</label>
+            <form class="form form-inline justify-content-center">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control rounded-end" placeholder="البريد الإلكتروني" />
+                <button class="btn btn-outline-secondary rounded-0 rounded-start" type="button" id="button-addon1">متابعة</button>
+              </div>
+            </form>
+          </div>
+          <hr class="line2 mx-auto" />
+          <div class="col-12 text-center">
+            <a class="copyright-link copyright" href="https://webdevabdullah.com/"> دورة تطوير واجهات المستخدم من أكاديمية حسوب </a>
+            <h5 class="copyright mt-2" id="year"></h5>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

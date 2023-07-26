@@ -101,3 +101,15 @@ function setupImageClickEvent() {
 }
 
 setupImageClickEvent();
+
+// #### C
+// Initialize Bootstrap File Input
+$(document).ready(function () {
+  // For Arabic language support, set the locale to 'ar' (use the appropriate locale for your language)
+  $.fn.fileinput.defaults.language = "ar";
+  // Initialize the file input
+  $("#formFile").fileinput({
+    browseLabel: "Hello",
+    // Other configuration options can be added here if needed
+  });
+});
