@@ -54,42 +54,6 @@
       .post-share {
         color: $main-color;
       }
-
-      .one-social {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 10px;
-        border: 1px solid $card-text-color;
-        color: $card-text-color;
-        width: 45px;
-        height: 45px;
-        border-radius: 3px;
-      }
-
-      .facebook-social {
-        &:hover,
-        &:focus {
-          color: #fff;
-          background-color: #3b5998;
-        }
-      }
-
-      .twitter-social {
-        &:hover,
-        &:focus {
-          color: #fff;
-          background-color: #1da1f2;
-        }
-      }
-
-      .linkedin-social {
-        &:hover,
-        &:focus {
-          color: #fff;
-          background-color: #0077b5;
-        }
-      }
     }
   }
 }
