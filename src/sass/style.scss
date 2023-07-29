@@ -52,6 +52,11 @@ a {
           background-color: $custom-color !important;
           border-bottom: 1px solid $main-color !important;
         }
+
+        &.active {
+          color: $main-color;
+          border-bottom: 1px solid $main-color;
+        }
       }
     }
   }
