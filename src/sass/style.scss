@@ -41,11 +41,6 @@ a {
     .navbar-nav {
       li {
         padding-top: 0.438rem !important;
-      }
-
-      li > a {
-        transition-property: background-color;
-        transition-duration: 0.5s;
 
         &:hover {
           color: $main-color !important;
@@ -55,8 +50,14 @@ a {
 
         &.active {
           color: $main-color;
+          background-color: $custom-color;
           border-bottom: 1px solid $main-color;
         }
+      }
+
+      li > a {
+        transition-property: background-color;
+        transition-duration: 0.5s;
       }
     }
   }
@@ -139,6 +140,7 @@ a {
       position: relative;
       margin-bottom: 32px;
       height: 100%;
+      overflow: hidden;
 
       .caption {
         position: absolute;
@@ -150,11 +152,12 @@ a {
         padding: 2%;
         text-align: center;
         color: #fff;
-        display: none;
+        top: -100%;
+        transition: all 0.4s ease;
       }
 
-      img {
-        width: 100%;
+      &:hover .caption {
+        top: 0;
       }
 
       .project-category {
@@ -167,6 +170,14 @@ a {
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         box-shadow: 0px 5px 20px 0px #202020;
+      }
+
+      &:hover .project-category {
+        display: none;
+      }
+
+      img {
+        width: 100%;
       }
     }
 
