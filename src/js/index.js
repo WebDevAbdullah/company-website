@@ -3,27 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/js/all.min";
 import "../css/style.css";
 import "../sass/style.scss";
-import "jquery";
 
-$(function () {
-  $(".thumbnail").hover(
-    function () {
-      $(this).find(".project-category").hide();
-      $(this).find(".caption").slideDown(250);
-    },
-
-    function () {
-      $(this).find(".caption").slideUp(250);
-      $(this).find(".project-category").show();
-    }
-  );
-});
-
+// #### Current Year ####
 let date = new Date();
 let year = date.getFullYear();
 document.getElementById("year").innerHTML = "جميع الحقوق محفوظة أكاديمية حسوب" + " &copy; " + year;
 
-// New
+// #### New ####
 // Get silder items | Array.from() ES6 Feature
 const sliderImg = Array.from(document.querySelectorAll(".modal-body img"));
 
@@ -102,14 +88,22 @@ function setupImageClickEvent() {
 
 setupImageClickEvent();
 
-// #### C
-// Initialize Bootstrap File Input
-$(document).ready(function () {
-  // For Arabic language support, set the locale to 'ar' (use the appropriate locale for your language)
-  $.fn.fileinput.defaults.language = "ar";
-  // Initialize the file input
-  $("#formFile").fileinput({
-    browseLabel: "Hello",
-    // Other configuration options can be added here if needed
-  });
+// #### Add active class to navbar links ####
+const pathname = window.location.pathname;
+const links = document.querySelectorAll(".navbar-nav > li > a");
+
+links.forEach((link) => {
+  if (link.getAttribute("href") === pathname) {
+    link.parentElement.classList.add("active");
+  }
 });
+
+if (pathname === "/blog-details.html" || pathname === "/add-blog.html") {
+  const blogLink = document.querySelector('.navbar-nav > li > a[href="/blog.html"]');
+  blogLink.parentElement.classList.add("active");
+}
+
+if (pathname === "/project-details.html") {
+  const projectsLink = document.querySelector('.navbar-nav > li > a[href="/projects.html"]');
+  projectsLink.parentElement.classList.add("active");
+}
