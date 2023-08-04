@@ -4,7 +4,6 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const path = require("path");
 
 module.exports = {
-  // mode: "development",
   entry: {
     app: "./src/js/index.js",
   },
@@ -71,13 +70,6 @@ module.exports = {
         type: "asset/resource",
         generator: {
           filename: "./fonts/[name][ext]",
-        },
-      },
-      {
-        test: require.resolve("jquery"),
-        loader: "expose-loader",
-        options: {
-          exposes: ["$", "jQuery"],
         },
       },
     ],
